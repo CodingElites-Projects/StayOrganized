@@ -1,9 +1,9 @@
-
 .btn-light,
 .btn-light:hover,
 .btn-light:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
+  text-shadow: none;
+  /* Prevent inheritance from `body` */
 }
 
 
@@ -22,5 +22,25 @@ body {
   }
 nav{
     background-color: beige;
+  background-image: url(https://bestanimations.com/media/mountains/337339886mountain-movingsky-gif.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+h1 {
+  color: white;
+  /* Change the color to red */
+}
+
+p {
+  color: white
+}
+
+nav {
+  background-color: beige;
+}
+
+
+#userTodoForm{
+  display:none;
+}
