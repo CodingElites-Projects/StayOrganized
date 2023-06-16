@@ -5,7 +5,7 @@ const table = document.getElementById("userTable");
 window.onload = init;
 
 function init() {
-  showUsers();
+ 
 }
 
 function showUsers() {
