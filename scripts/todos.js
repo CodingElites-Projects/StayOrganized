@@ -5,8 +5,25 @@ const table = document.getElementById("userTable");
 window.onload = init;
 
 function init() {
+
  
+
+  showUsers();
+  userSelect.onchange = populateUsersClick;
+
 }
+
+function populateUsersClick() {
+    let theUrl = 'http://localhost:8083/api/todos/byuser/' + userSelect.value;
+    fetch(theUrl)
+      .then(response => response.json())
+      .then(data => {
+          console.log(data); 
+        //   populateUserTablet(data);
+          })
+}
+
+
 
 function showUsers() {
   console.log("clicked");
@@ -37,3 +54,4 @@ function showUsers() {
         }
     });
 }
+
