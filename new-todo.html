@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,8 +10,6 @@
 </head>
 
 <body>
-
-  <header>
     <header class="mb-5">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -36,7 +33,6 @@
           </div>
         </div>
       </nav>
-    </header>
   </header>
 
 
@@ -86,6 +82,19 @@
         </div>
       </div>
     </div>
+    
+    <!--Input field-->
+            <div class="container">
+          <label for="todoDescription">Description of task</label>
+          <br>
+          <textarea id="todoDescription" rows="4" cols="50" class="form-control"></textarea>
+          <br>
+          <label for="todoDeadline">Deadline</label>
+          <br>
+          <input type="text" id="todoDeadline" class="form-control">
+          <br>
+          <button type="button" id="addBtn" class="btn btn-primary">Add</button>
+        </div>
 
 
 
@@ -103,5 +112,4 @@
     crossorigin="anonymous"></script>
   <script src="scripts/new-todo.js"></script>
 </body>
-
 </html>
