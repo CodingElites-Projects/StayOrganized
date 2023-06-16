@@ -8,6 +8,20 @@
 
 
 body {
+    background-image: url(https://bestanimations.com/media/mountains/337339886mountain-movingsky-gif.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  h1 {
+    color: white; /* Change the color to red */
+  }
+  
+  p {
+    color: white
+  }
+nav{
+    background-color: beige;
   background-image: url(https://bestanimations.com/media/mountains/337339886mountain-movingsky-gif.gif);
   background-repeat: no-repeat;
   background-size: cover;
