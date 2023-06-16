@@ -1,33 +1,39 @@
 "use strict";
 
 const table = document.getElementById("userTable");
+const userSelect = document.getElementById("userSelect");
 
 window.onload = init;
 
 function init() {
-  showUsers();
-  userSelect.onchange = populateUsersClick;
+  populateUsersClick()
+   showUsers();
+  // userSelect.onchange = populateUsersClick;
 }
 
 function populateUsersClick() {
-    let theUrl = 'http://localhost:8083/api/todos/byuser/' + userSelect.value;
+    let theUrl = 'http://localhost:8083/api/users/' + userSelect.value;
     fetch(theUrl)
       .then(response => response.json())
       .then(data => {
-          console.log(data); 
-        //   populateUserTablet(data);
+        console.log(data)
+       for(let i of data){
+        console.log(i)
+        let option = document.createElement("option");
+        option.value = i.id;
+        option.text = i.name;
+        userSelect.appendChild(option);
+        
+       }
+       showUsers(data);
           })
 }
 
 
 
-function showUsers() {
+function showUsers(data) {
   console.log("clicked");
 
-  let theUrl = "http://localhost:8083/api/todos/"
-  fetch(theUrl)
-    .then((response) => response.json())
-    .then((data) => {
       console.log(data);
 
       for (let i = 0; i < data.length; i++) {
@@ -48,6 +54,6 @@ function showUsers() {
         
 
         }
-    });
-}
+    };
+
 

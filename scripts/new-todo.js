@@ -1,5 +1,6 @@
 "use strict";
-const searchSelectRow = document.getElementById("searchSelectRow");
+const userSelectDropdown = document.getElementById("userSelectDropdown");
+const userSelect = document.getElementById("userSelect");
 const categorySelectRow = document.getElementById("categorySelectRow");
 const categorySelect = document.getElementById("categorySelect");
 const urgencySelectRow = document.getElementById("urgencySelectRow");
@@ -26,6 +27,7 @@ function populatecategorySelectDropdown(){
         }
         
     })
+}
   
   function onUserSelectDropdown(){
 
