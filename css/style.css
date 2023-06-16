@@ -21,10 +21,7 @@ body {
     color: white
   }
 nav{
-    background-color: beige;
-  background-image: url(https://bestanimations.com/media/mountains/337339886mountain-movingsky-gif.gif);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: beige;
 }
 
 h1 {
@@ -35,11 +32,6 @@ h1 {
 p {
   color: white
 }
-
-nav {
-  background-color: beige;
-}
-
 
 #userTodoForm{
  display:none;
