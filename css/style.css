@@ -35,4 +35,9 @@ p {
 
 /* #userDisplayTable{
  display:none;
-} */
+}*/
+
+.card-text{
+    color: black;
+}
+
