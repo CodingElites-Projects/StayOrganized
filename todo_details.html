@@ -73,76 +73,47 @@
         <div class="container">
 
             <!-- table for userdropdown values start -->
-            <form class="container-flex" id="userTable">
+
+            <div class=" row">
+
+
                 <div class="row">
-                    <div class="col">
-
-                        <table class="col-md-12 text-center" id="userTable">
-                            <thead id="userTodoHeader">
-
-                                <tr>
+                    <div class="col-4">
 
 
-                                    <th>Category</th>
+                        <div id="messageText" class="container mx-5"></div>
 
-                                    <th>Priority</th>
-
-                                    <th>Completed</th>
-
-
-                                </tr>
-
-                            </thead>
-
-                            <tbody id="userDisplay">
-
-
-                            </tbody>
-
-
-                        </table>
-
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6">
-
-                            <h2 class="mb-5 text-center">TODO Details</h2>
-                            <div id="messageText" class="container mx-5"></div>
-
-                            <div class="input-group input-group-lg">
-                                <span class="input-group-text" id="todoCategory">Category</span>
-                                <input type="text" class="form-control" id="todoCategory" aria-label="Category"
-                                    aria-describedby="todoCategory">
-                            </div>
-                            <div class="input-group input-group-lg">
-                                <span class="input-group-text" id="todoPriority">Priority</span>
-                                <input type="text" class="form-control" id="todoPriority" aria-label="Priority"
-                                    aria-describedby="todoPriority">
-                            </div>
-                            <div class="input-group input-group-lg">
-                                <span class="input-group-text" id="todoCompleted">Completed</span>
-                                <input type="text" class="form-control" id="todoCompleted" aria-label="todoCompleted"
-                                    aria-describedby="todoCompleted">
-                            </div>
-                            <button type="button" class="btn btn-primary" id="todoCompletedBtn">MARK
-                                COMPLETED</button>
-                            <div id="messageText" class="container mx-5"></div>
-
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text" id="todoCategorySpan">Category</span>
+                            <input type="text" class="form-control" id="todoCategory" aria-label="Category"
+                                aria-describedby="todoCategory">
                         </div>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text" id="todoPrioritySpan">Priority</span>
+                            <input type="text" class="form-control" id="todoPriority" aria-label="Priority"
+                                aria-describedby="todoPriority">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text" id="todoCompletedSpan">Completed</span>
+                            <input type="text" class="form-control" id="todoCompleted" aria-label="todoCompleted"
+                                aria-describedby="todoCompleted">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="todoCompletedBtn">MARK
+                            COMPLETED</button>
+                        <div id="messageText" class="container mx-5"></div>
+
                     </div>
+
                 </div>
-            </form>
-
-            <!-- table for userdropdown values end -->
-            <div class="container">
-                <h1 id="error"></h1>
-            </div>
 
 
-        </div>
+                <!-- table for userdropdown values end -->
+                <div class="container">
+                    <h1 id="error"></h1>
+                </div>
+
+
+
     </main>
     <!-- users section dropdown end -->
 
