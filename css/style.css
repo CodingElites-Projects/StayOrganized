@@ -36,3 +36,7 @@ p {
 #userTodoForm{
  display:none;
 }
+
+.card-text{
+    color: black;
+}
