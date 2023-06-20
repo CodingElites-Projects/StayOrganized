@@ -111,9 +111,13 @@ function populateInputTable(task) {
     cell5.innerHTML = task.priority;
 
 
+
+
+
     let cell6 = newRow.insertCell(5);
     cell6.innerHTML = task.completed;
 }
+
 
 
 
