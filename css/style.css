@@ -33,10 +33,11 @@ p {
   color: white
 }
 
-#userTodoForm{
+/* #userDisplayTable{
  display:none;
-}
+}*/
 
 .card-text{
     color: black;
 }
+
