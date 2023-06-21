@@ -2,7 +2,9 @@
 
 const table = document.getElementById("userDisplayTable");
 const userSelect = document.getElementById("userSelect");
+const userTable = document.getElementById("userTable");
 
+const tr = document.getElementById("userTableShow");
 
 window.onload = init;
 
@@ -25,9 +27,11 @@ function onPopulateUsersClick() {
         option.value = i.id;
         option.text = i.name;
         userSelect.appendChild(option);
-
       }
+
     });
+    
+  
 
 
 }
@@ -41,10 +45,9 @@ function onPopulateUsersClick() {
 function showUsersTable() {
 
 
-  // if (userSelect.checked) {
-  //   table.style.display = "block";
-
-  // } 
+  if (userSelect.checked) {
+    tr.style.display = "block";
+  }
 
 
   let theUrl = "http://localhost:8083/api/todos/byuser/" + userSelect.value;
@@ -65,7 +68,10 @@ function showUsersTable() {
         let cell3 = row.insertCell();
         cell3.className = "text-center mx-3";
 
-       
+        // let anchor = document.createElement("a");
+        // anchor.href = ` todo_details.html?id=${userSelect.value}`;
+        // anchor.text = "See details";
+        // cell3.appendChild(anchor);
 
         let anchor = document.createElement("a");
         anchor.href = ` todo_details.html?id=${userSelect.value}`;

@@ -8,19 +8,21 @@
 
 
 body {
-    background-image: url(https://bestanimations.com/media/mountains/337339886mountain-movingsky-gif.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  h1 {
-    color: white; /* Change the color to red */
-  }
-  
-  p {
-    color: white
-  }
-nav{
+  background-image: url(https://bestanimations.com/media/mountains/337339886mountain-movingsky-gif.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+  /* Change the color to red */
+}
+
+p {
+  color: white
+}
+
+nav {
   background-color: beige;
 }
 
@@ -33,23 +35,24 @@ p {
   color: white
 }
 
+#homepagePara1, #homepagePara2{
+  color: black;
+}
 
 
-/* #userDisplayTable{
- display:none;
 
-} */
-
-form{
+form {
   width: 300px;
   margin-left: 20px;
 }
-form label{
+
+form label {
   display: flex;
   margin-top: 20px;
   font-size: 18px;
 }
-form input{
+
+form input {
   width: 100%;
   padding: 7px;
   border: none;
@@ -57,14 +60,16 @@ form input{
   border-radius: 6px;
   outline: none;
 }
-input[type="button"]{
+
+input[type="button"] {
   width: 320px;
   height: 35px;
   margin-top: 20px;
   border: none;
   background-color: aqua;
 }
-.sign-up{
+
+.sign-up {
   width: 360px;
   height: 510px;
   margin: auto;
@@ -74,8 +79,6 @@ input[type="button"]{
 
 
 
-.card-text{
-    color: black;
+.card-text {
+  color: black;
 }
-
-
